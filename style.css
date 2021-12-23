@@ -209,4 +209,94 @@ header ul li a:hover{
     width: 100%;
     height: 80%;
     bottom: 0;
+    filter: saturate(0);
+    transition: 0.5s;
+}
+.about1:hover{
+    filter: saturate(1);
+}
+/* skills */
+.skills{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #e0e0e0;
+    padding-top: 11%;
+}
+/* card */
+.card-container{
+    position: relative;
+    align-items: center;
+    display: flex;
+    /* padding-top: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 5%;
+}
+.card{
+    position: relative;
+    width: 20%;
+    height: 300px;
+    background: rgb(128, 128, 128);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: 0.2s;
+    z-index: 999;
+}
+.card:hover{
+    background: #e0e0e0;
+    border: 1px solid rgb(37,37,37);
+}
+.card:hover .duo{
+    height: 100%;
+}
+.card:hover .logosvg{
+    filter: saturate(1);
+}
+.card:hover h2{
+    color: seagreen;
+}
+.card:hover p{
+    color: rgb(37, 37, 37);
+    padding-top: 7px;
+}
+.card h2{
+    color: #e0e0e0;
+}
+.card p{
+    padding-top: 25px;
+    color: #e0e0e0;
+    transition: 0.5s;
+}
+.line{
+    position: relative;
+    background: #e0e0e0;
+    height: 3px;
+}
+.skills-header{
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.skills-header h2{
+    color: rgb(37,37,37);
+    font-size: 2em;
+}
+.duo{
+    width: 100%;
+    height: 50%;
+    background: rgb(37,37,37);
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+.logosvg{
+    width: 70%;
+    filter: saturate(0);
+    transition: 0.2s;
 }
