@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+}
+.banner .box{
+    position: relative;
+    height: 100vh;
+    background: #e0e0e0;
+}
+.banner .box:last-child{
+    background: rgb(37, 37, 37);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    position: relative;
+    font-size: 1.4em;
+    color: rgb(37, 37, 37);
+    font-weight: 700;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+header ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(37, 37, 37);
+    letter-spacing: 1px;
+}
+header ul li a:hover{
+    color: #494949;
+}
+/* header right */
+.header-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right ul{
+    display: flex;
+}
+.header-right ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+.header-right ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #e0e0e0;
+    letter-spacing: 1px;
+}
+.header-right ul li a:hover{
+    color: #fff;
+}
+/* conteudo section home */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.sol-left{
+    font-size: 3em;
+    font-weight: 500;
+    color: rgb(37, 37, 37);
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+.sol-right{
+    font-size: 3em;
+    font-weight: 500;
+    color: #e0e0e0;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+.content h3{
+    font-size: 2em;
+    font-weight: 400;
+    color: rgb(37, 37, 37);
+}
+.content h2{
+    font-size: 4em;
+    color: rgb(37, 37, 37);
+}
+.content p{
+    font-size: 1.1em;
+    color: #494949;
+    line-height: 1.8em;
+}
+.btn{
+    display: inline-block;
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid rgb(37, 37, 37);
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: rgb(37, 37, 37);
+    color: #e0e0e0;
+    letter-spacing: 2px;
+}
