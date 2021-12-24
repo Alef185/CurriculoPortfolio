@@ -293,6 +293,18 @@ header ul li a:hover{
 	color: #7b8ca0;
     transition: 0.3s;
 }
+.li-a{
+    display: none;
+}
+.menu-btn i{
+    color: #e0e0e0;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
 /* responsivel */
 @media screen and (max-width: 1024px){
 	.cards_wrap .card_item{
@@ -315,6 +327,12 @@ header ul li a:hover{
     }
     .banner-right{
         grid-template-columns: 1fr;
+    }
+    .li-a{
+        display: block;
+    }
+    .sol-left{
+        display: none;
     }
     
 }
@@ -353,36 +371,16 @@ header ul li a:hover{
     .box-images{
         display: none;
     }
-}
-.menu-btn i{
-    color: #e0e0e0;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
-#click{
-    display: none;
-}
-@media screen and (max-width: 568px){
-    .sol-right{
-        display: none;
+    .li-a{
+        display: block;
     }
-    .box-images{
-        display: none;
-    }
-	.cards_wrap .card_item{
-		width: 100%;
-	}
-	.wrapper .header{
-		font-size: 14px;
-	}
     /* menu */
     header{
         position: fixed;
         background: rgb(37, 37, 37);
         box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
--webkit-box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
--moz-box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
+        -webkit-box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
+        -moz-box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
     }
     #click:checked ~ .menu-btn i:before{
         content: "\f00d";
@@ -416,6 +414,74 @@ header ul li a:hover{
     .menu-btn i{
         display: block;
     }
+    .li-a{
+        display: block;
+    }
+    .sol-left{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 568px){
+    .sol-right{
+        display: none;
+    }
+    .sol-left{
+        display: none;
+    }
+    .box-images{
+        display: none;
+    }
+	.cards_wrap .card_item{
+		width: 100%;
+	}
+	.wrapper .header{
+		font-size: 14px;
+	}
+    /* menu */
+    header{
+        position: fixed;
+        background: rgb(37, 37, 37);
+        box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
+        -webkit-box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
+        -moz-box-shadow: 0px -7px 0px -2px rgba(255,255,255,1) inset;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    header ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: rgb(37, 37, 37);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    header ul li{
+        margin: 40px 0;
+        text-align: center;
+    }
+    header ul li a{
+        font-size: 20px;
+        display: block;
+        color: #e0e0e0;
+    }
+    header ul li a:hover{
+        color: #fff;
+    }
+    .menu-btn i{
+        display: block;
+    }
+    .li-a{
+        display: block;
+    }
 }
 /* HOVER CARD */
 .card_item:hover{
@@ -429,3 +495,17 @@ header ul li a:hover{
     padding-top: 10px;
 }
 /* responsive */
+.menu-negative{
+    position: absolute;
+    right: -100px;
+}
+.menu-negative a{
+    color: #e0e0e0;
+}
+.menu-negative2{
+    position: absolute;
+    right: -200px;
+}
+.menu-negative2 a{
+    color: #e0e0e0;
+}
