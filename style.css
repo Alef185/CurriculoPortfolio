@@ -333,7 +333,16 @@ header ul li a:hover{
         font-size: 2.5em;
     }
     .content-black p{
-        font-size: 0.8em;
+        font-size: 1em;
+    }
+    .content h3{
+        font-size: 1.4em;
+    }
+    .content h2{
+        font-size: 2.5em;
+    }
+    .content p{
+        font-size: 1em;
     }
     .banner{
         grid-template-columns: 1fr;
@@ -370,7 +379,10 @@ header ul li a:hover{
     /* menu */
     header{
         position: fixed;
-        background: #424242;
+        background: rgb(37, 37, 37);
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
     }
     header ul{
         position: fixed;
