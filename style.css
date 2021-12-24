@@ -204,10 +204,15 @@ header ul li a:hover{
     height: 100vh;
     background: #8b8b8b;
 }
-.about1{
-    position: absolute;
+.container-images{
     width: 100%;
-    height: 80%;
+    position: absolute;
+    bottom: 0;
+}
+.about1{
+    /* position: absolute; */
+    width: 100%;
+    position: relative;
     bottom: 0;
     filter: saturate(0);
     transition: 0.5s;
@@ -218,87 +223,11 @@ header ul li a:hover{
 /* skills */
 .skills{
     position: relative;
-    /* height: 100vh; */
     width: 100%;
     background: #e0e0e0;
     padding-top: 2%;
 }
-/* card */
-/* .card-container{
-    position: relative;
-    align-items: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    padding: 5%;
-}
-.card{
-    position: relative;
-    width: 20%;
-    height: 300px;
-    background: rgb(128, 128, 128);
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    transition: 0.2s;
-    z-index: 999;
-}
-.card:hover{
-    background: #e0e0e0;
-    border: 1px solid rgb(37,37,37);
-}
-.card:hover .duo{
-    height: 100%;
-}
-.card:hover .logosvg{
-    filter: saturate(1);
-}
-.card:hover h2{
-    color: seagreen;
-}
-.card:hover p{
-    color: rgb(37, 37, 37);
-    padding-top: 7px;
-}
-.card h2{
-    color: #e0e0e0;
-}
-.card p{
-    padding-top: 25px;
-    color: #e0e0e0;
-    transition: 0.5s;
-}
-.line{
-    position: relative;
-    background: #e0e0e0;
-    height: 3px;
-}
-.skills-header{
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-}
-.skills-header h2{
-    color: rgb(37,37,37);
-    font-size: 2em;
-}
-.duo{
-    width: 100%;
-    height: 50%;
-    background: rgb(37,37,37);
-    position: absolute;
-    bottom: 0;
-    z-index: 0;
-}
-.logosvg{
-    width: 70%;
-    filter: saturate(0);
-    transition: 0.2s;
-} */
+
 .wrapper .header{
 	width: 100%;
 	height: 50px;
@@ -364,10 +293,30 @@ header ul li a:hover{
 	color: #7b8ca0;
     transition: 0.3s;
 }
+/* responsivel */
 @media screen and (max-width: 1024px){
 	.cards_wrap .card_item{
 		width: 33%;
 	}
+    .content-black h3{
+        font-size: 1.5em;
+    }
+    .content-black h2{
+        font-size: 3em;
+    }
+    .content-black p{
+        font-size: 0.8em;
+    }
+    .box-images{
+        display: none;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner-right{
+        grid-template-columns: 1fr;
+    }
+    
 }
 @media screen and (max-width: 768px){
 	.cards_wrap .card_item{
@@ -377,14 +326,81 @@ header ul li a:hover{
 		font-size: 16px;
 		height: 60px;
 	}
+    .content-black h3{
+        font-size: 1.4em;
+    }
+    .content-black h2{
+        font-size: 2.5em;
+    }
+    .content-black p{
+        font-size: 0.8em;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner-right{
+        grid-template-columns: 1fr;
+    }
+    .box-images{
+        display: none;
+    }
+}
+.menu-btn i{
+    color: #e0e0e0;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
 }
 @media screen and (max-width: 568px){
+    .sol-right{
+        display: none;
+    }
+    .box-images{
+        display: none;
+    }
 	.cards_wrap .card_item{
 		width: 100%;
 	}
 	.wrapper .header{
 		font-size: 14px;
 	}
+    /* menu */
+    header{
+        position: fixed;
+        background: #424242;
+    }
+    header ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: rgb(37, 37, 37);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    header ul li{
+        margin: 40px 0;
+        text-align: center;
+    }
+    header ul li a{
+        font-size: 20px;
+        display: block;
+        color: #e0e0e0;
+    }
+    header ul li a:hover{
+        color: #fff;
+    }
+    .menu-btn i{
+        display: block;
+    }
 }
 /* HOVER CARD */
 .card_item:hover{
@@ -397,3 +413,4 @@ header ul li a:hover{
 .card_item:hover .film{
     padding-top: 10px;
 }
+/* responsive */

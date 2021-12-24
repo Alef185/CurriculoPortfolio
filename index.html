@@ -4,12 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Álef - Portfólio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
     <section class="banner">
         <div class="box content">
             <header>
                 <a href="#" class="logo"></a>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">Sobre</a></li>
@@ -25,13 +28,13 @@
                 <a href="#about" class="btn">Ler mais</a>
             </div>
         </div>
-        <div class="box images">
-            <header class="header-right">
+        <div class="box box-images">
+            <!-- <header class="header-right">
                 <ul>
                     <li><a href="#">Contato</a></li>
                     <li><a href="#">Currículo</a></li>
                 </ul>
-            </header>
+            </header> -->
             <h4 class="sol-right">阳</h4>
             <div class="gradient1"></div>
             <img src="background1.png" alt="background de códigos" class="background1">
@@ -52,49 +55,13 @@
                 <a href="#skills" class="btn-black">Ler mais</a>
             </div>
         </div>
-        <div class="box images">
-            <img src="about2.jpg" alt="desenho sobre mim" class="about1">
+        <div class="box box-images">
+            <div class="container-images">
+                <img src="about2.jpg" alt="desenho sobre mim" class="about1" style="width:100%">
+            </div>
         </div>
     </section>
     <section class="skills" id="skills">
-        <!-- <header class="skills-header">
-            <h2>
-                Habilidades e Linguagens conhecidas:
-            </h2>
-        </header>
-        <div class="card-container">
-            <div class="card">
-                <h2>PHP</h2>
-                <div class="line"></div>
-                <p>Conhecimentos no framework Laravel versão 8.x, um framework de PHP</p>
-                <img src="laravel.svg" alt="" class="logosvg">
-            </div>
-            <div class="card">
-                <h2>Javascript</h2>
-                <div class="line"></div>
-                <p>Conhecimentos no framework Laravel versão 8.x, um framework de PHP</p>
-                <img src="js.svg" alt="" class="logosvg">
-            </div>
-            <div class="card">
-                <h2>CSS</h2>
-                <div class="line"></div>
-                <p>Conhecimentos no framework Laravel versão 8.x, um framework de PHP</p>
-                <img src="css.svg" alt="" class="logosvg">
-            </div>
-            <div class="card">
-                <h2>C#</h2>
-                <div class="line"></div>
-                <p>Conhecimentos no framework Laravel versão 8.x, um framework de PHP</p>
-                <img src="c.svg" alt="" class="logosvg">
-            </div>
-            <div class="card">
-                <h2>SQL</h2>
-                <div class="line"></div>
-                <p>Conhecimentos no framework Laravel versão 8.x, um framework de PHP</p>
-                <img src="sql.svg" alt="" class="logosvg">
-            </div>
-        </div>
-        <div class="duo"></div> -->
         <div class="wrapper">
             <div class="header">Tecnologias, linguagens e frameworks</div>
             <div class="cards_wrap">
