@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursorBall"></div>
     <section class="banner">
         <div class="box content">
             <header>
@@ -14,14 +16,14 @@
                 <input type="checkbox" id="click">
                 <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
                 <ul>
-                    <li><a href="#" onclick="fechar()">Home</a></li>
-                    <li><a href="#about" onclick="fechar()">Sobre</a></li>
-                    <li><a href="#skills" onclick="fechar()">Habilidades</a></li>
-                    <li><a href="#" onclick="fechar()">Projetos</a></li>
-                    <li class="li-a"><a href="#" onclick="fechar()">Contato</a></li>
-                    <li class="li-a"><a href="#" onclick="fechar()">Currículo</a></li>
-                    <li class="menu-negative"><a href="#" onclick="fechar()">Contato</a></li>
-                    <li class="menu-negative2"><a href="#" onclick="fechar()">Currículo</a></li>
+                    <li id="linkLi"><a href="#" onclick="fechar()">Home</a></li>
+                    <li id="linkLi"><a href="#about" onclick="fechar()">Sobre</a></li>
+                    <li id="linkLi"><a href="#skills" onclick="fechar()">Habilidades</a></li>
+                    <li id="linkLi"><a href="#" onclick="fechar()">Projetos</a></li>
+                    <li id="linkLi" class="li-a"><a href="#" onclick="fechar()">Contato</a></li>
+                    <li id="linkLi" class="li-a"><a href="#" onclick="fechar()">Currículo</a></li>
+                    <li id="linkLi" class="menu-negative"><a href="#" onclick="fechar()">Contato</a></li>
+                    <li id="linkLi" class="menu-negative2"><a href="#" onclick="fechar()">Currículo</a></li>
                 </ul>
             </header>
             <div class="content-box">
@@ -145,12 +147,36 @@
         </div>
     </section>
     <script>
+        // script menu
         function fechar() {
         var inputCheckbox = document.getElementById('click');
             if (inputCheckbox.checked === true) {
                 inputCheckbox.checked = false;
             }
         }
+        // script mouse
+        let mouseCursor = document.querySelector(".cursor");
+        let mouseCursorBall = document.querySelector(".cursorBall");
+        let navlinks = document.querySelectorAll("#linkLi");
+
+        window.addEventListener("mousemove",cursor);
+
+        function cursor(e){
+            mouseCursor.style.top = (e.pageY - 12) + "px";
+            mouseCursor.style.left = (e.pageX - 12) + "px";
+            mouseCursorBall.style.top = e.pageY + "px";
+            mouseCursorBall.style.left = e.pageX + "px";
+        }
+
+        navlinks.forEach(link => {
+            link.addEventListener("mouseleave", () => {
+                mouseCursor.classList.remove("link-grow")
+            });
+            link.addEventListener("mouseover", () => {
+                mouseCursor.classList.add("link-grow")
+            });
+        });
+
     </script>
 </body>
 </html>
