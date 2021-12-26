@@ -546,6 +546,9 @@ header ul li a:hover{
     .cards_wrap .card_item .img{
         filter: saturate(1);
     }
+    .inputEmail, .inputName, #message{
+        max-width: 85%;
+    }
 }
 /* HOVER CARD */
 .card_item:hover{
