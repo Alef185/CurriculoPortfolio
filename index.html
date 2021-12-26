@@ -5,6 +5,7 @@
     <title>Álef - Portfólio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
 </head>
 <body>
     <div class="cursor"></div>
@@ -36,12 +37,6 @@
             </div>
         </div>
         <div class="box box-images" id="linkLi">
-            <!-- <header class="header-right">
-                <ul>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Currículo</a></li>
-                </ul>
-            </header> -->
             <h4 class="sol-right">阳</h4>
             <div class="gradient1"></div>
             <img src="home.png" alt="background de códigos" class="background1">
@@ -151,38 +146,59 @@
         <div class="wrapper">
             <div class="header" id="linkLi">Projetos mais recentes</div>
             <div class="cards_wrap">
-                <div class="card_item">
+                <div class="card_item" id="cubeEffect">
                     <div class="card_inner innerImg">
+                        <div class="info">Clique para saber mais</div>
                         <img src="img1.png" alt="" class="imgProject">
                         <div class="role_name">EzOffice - Programação</div>
                         <div class="real_name">BACKEND</div>
                         <div class="film">Projeto de Trabalho de conclusão de Curso, desenvolvido utilizando PHP, JAVASCRIPT, SQL, junto com frameworks Laravel v8, VueJS, Tailwind, Inertia.</div>
                     </div>
                 </div>
-                <div class="card_item">
+                <div class="card_item" id="cubeEffect">
                     <div class="card_inner innerImg">
+                        <div class="info">Clique para saber mais</div>
                         <img src="img1.png" alt="" class="imgProject">
                         <div class="role_name">EzOffice - Design</div>
                         <div class="real_name">FRONTEND</div>
                         <div class="film">Projeto de Trabalho de conclusão de Curso, desenvolvido utilizando PHP, JAVASCRIPT, SQL, junto com frameworks Laravel v8, VueJS, Tailwind, Inertia.</div>
                     </div>
                 </div>
-                <div class="card_item">
+                <div class="card_item" id="cubeEffect">
                     <div class="card_inner innerImg">
+                        <div class="info">Clique para saber mais</div>
                         <img src="laravel.svg" alt="" class="imgProject">
                         <div class="role_name">Laravel</div>
                         <div class="real_name">PHP Framework</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
                     </div>
                 </div>
-                <div class="card_item">
+                <div class="card_item" id="cubeEffect">
                     <div class="card_inner innerImg">
+                        <div class="info">Clique para saber mais</div>
                         <img src="laravel.svg" alt="" class="imgProject">
                         <div class="role_name">Laravel</div>
                         <div class="real_name">PHP Framework</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contactForm">
+                <form action="POST" class="formContact">
+                    <h2 style="margin-bottom: 10px; margin-top: 10px; font-size: 2em; color: rgb(37, 37, 37);">Contate-me</h2>
+                    <h3 style="margin-bottom: 20px; font-weight: 400; color: rgb(37, 37, 37);">Caso queira mais informações ou tenha algum interesse</h3>
+                    <div style="margin-bottom: 10px;"><label for="name" class="labelName">Nome:</label></div>
+                    <div style="margin-bottom: 10px;"><input type="text" id="name" class="inputName"></div>
+                    <div style="margin-bottom: 10px;"><label for="email" class="labelEmail">Email:</label></div>
+                    <div style="margin-bottom: 10px;"><input type="text" id="email" class="inputEmail"></div>
+                    <div style="margin-bottom: 10px;"><label for="message" class="labelMessage">Mensagem:</label></div>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button class="btn">Enviar</button>
+                </form>
             </div>
         </div>
     </section>
@@ -199,6 +215,7 @@
                     <a href=""><i class="fab fa-linkedin"></i></a>
                     <a href=""><i class="fab fa-github-square"></i></a>
                 </div>
+                
             </div>
         </footer>
     </section>
@@ -215,6 +232,7 @@
         let mouseCursorBall = document.querySelector(".cursorBall");
         let navlinks = document.querySelectorAll("#linkLi");
         let imageEffect= document.querySelectorAll("#imageEffect");
+        let cubeEffect= document.querySelectorAll("#cubeEffect");
 
         window.addEventListener("mousemove",cursor);
 
@@ -239,6 +257,14 @@
             });
             link.addEventListener("mouseover", () => {
                 mouseCursor.classList.add("effect")
+            });
+        });
+        cubeEffect.forEach(link => {
+            link.addEventListener("mouseleave", () => {
+                mouseCursor.classList.remove("cubeEffect")
+            });
+            link.addEventListener("mouseover", () => {
+                mouseCursor.classList.add("cubeEffect")
             });
         });
 

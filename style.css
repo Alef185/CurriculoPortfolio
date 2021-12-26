@@ -233,9 +233,9 @@ header ul li a:hover{
     bottom: 0;
 }
 .about1{
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     bottom: 0;
     filter: saturate(0);
     transition: 0.5s;
@@ -289,6 +289,24 @@ header ul li a:hover{
 .cards_wrap .innerImg{
 	min-height: 550px !important;
 	max-height: 570px !important;
+}
+.info{
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+    background: rgb(92, 163, 190);
+    width: 300px;
+    padding: 20px;
+    font-size: 1.2em;
+    border-bottom-right-radius: 30px;
+    font-weight: 600;
+    /* border: 5px solid #fff; */
+    translate: -200px;
+}
+.card_item:hover div{
+    opacity: 1;
+    translate: 0px;
 }
 .imgProject{
     width: 100% !important;
@@ -559,11 +577,7 @@ header ul li a:hover{
     border: 2px solid rgb(37, 37, 37);
     border-radius: 50%;
     position: absolute;
-    /* transform: translate(-50%, -50%); */
     pointer-events: none;
-    /* transition: all 0.3s ease; */
-    /* transition-property: background, transform;
-    transform-origin: 100% 100%; */
     z-index: 999;
     filter: invert(1);
     transition-duration: 200ms;
@@ -589,9 +603,18 @@ header ul li a:hover{
     transform: scale(5);
     background: rgb(37, 37, 37);
 }
+.cubeEffect{
+    transform: scale(3);
+    background: rgb(37, 37, 37);
+    border-radius: 5px;
+}
 .projects{
     position: relative;
     background: #e0e0e0;
+}
+.contact{
+    position: relative;
+    background: rgb(37, 37, 37);
 }
 /* footer */
 .footer{
@@ -653,20 +676,91 @@ header ul li a:hover{
 }
 /* button to top */
 #myBtn{
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(108, 184, 214); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(108, 184, 214); 
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 18px; 
 }
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555; 
+}
+/* contact */
+.contact .container{
+    background: #e0e0e0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.contactForm{
+    width: 100%;
+    height: 570px;
+    background: #e0e0e0;
+    border: 2px solid rgb(37, 37, 37);
+    padding: 20px;
+}
+.formContact{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+.labelName{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.inputName{
+    border: 2px solid rgb(37, 37, 37);
+    border-radius: 10px;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 3px;
+    transition: 0.3s;
+}
+.labelEmail{
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+.labelMessage{
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+.inputEmail{
+    border: 2px solid rgb(37, 37, 37);
+    border-radius: 10px;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 3px;
+    transition: 0.3s;
+}
+.inputEmail:hover{
+    background: #fff;
+}
+.inputName:hover{
+    background: #fff;
+}
+#message:hover{
+    background: #fff;
+}
+#message{
+    border: 2px solid rgb(37, 37, 37);
+    border-radius: 10px;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 3px;
+    transition: 0.3s;
+    height: 100px;
 }
