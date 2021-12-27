@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    cursor: none;
+    /* cursor: none; */
 }
 html {
     scroll-behavior: smooth;
@@ -144,7 +144,7 @@ header ul li a:hover{
     font-size: 4em;
     color: rgb(37, 37, 37);
     transition: 0.7s ease;
-    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(206,89,55,0);
+    /* text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(206,89,55,0); */
 }
 .content p{
     font-size: 1.1em;
@@ -161,9 +161,6 @@ header ul li a:hover{
     font-size: 4em;
     color:#e0e0e0;
     transition: 0.7s ease;
-}
-.content-black h2:hover{
-    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9), 3px -4px 3px rgba(224,224,224,0);
 }
 .content-black p{
     font-size: 1.1em;
@@ -206,22 +203,21 @@ header ul li a:hover{
 }
 /* background */
 .gradient1{
-    position: absolute;
+    /* position: absolute;
     width: 100%;
     height: 60%;
     background: rgb(37,37,37);
     background: linear-gradient(180deg, rgb(8, 8, 8) 0%, rgba(26, 26, 26, 0.502) 50%, rgba(34,0,255,0) 100%);
     z-index: 888;
-    pointer-events: none;
+    pointer-events: none; */
+    display: none;
 }
 .background1{
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     filter: saturate(0);
-    transition: all 0.5s ease;
-}
-.background1:hover{
-    filter: saturate(1.5);
+    transition: all 0.5s ease; */
+    display: none;
 }
 /* about */
 .about{
@@ -237,13 +233,8 @@ header ul li a:hover{
 .about1{
     position: absolute;
     width: 100%;
-    /* position: relative; */
     bottom: 0;
     filter: saturate(0);
-    transition: 0.5s;
-}
-.about1:hover{
-    filter: saturate(1);
 }
 /* skills */
 .skills{
@@ -303,12 +294,9 @@ header ul li a:hover{
     font-size: 1.2em;
     border-bottom-right-radius: 30px;
     font-weight: 600;
-    /* border: 5px solid #fff; */
-    translate: -200px;
 }
 .card_item:hover div{
     opacity: 1;
-    translate: 0px;
 }
 .imgProject{
     width: 100% !important;
@@ -564,13 +552,13 @@ header ul li a:hover{
 .card_item:hover{
     background: rgb(37,37,37);
 }
-.card_item:hover .img{
+/* .card_item:hover .img{
     filter: saturate(1);
     translate: 100%;
-}
-.card_item:hover .film{
+} */
+/* .card_item:hover .film{
     padding-top: 10px;
-}
+} */
 /* responsive */
 .menu-negative{
     position: absolute;
@@ -594,7 +582,7 @@ header ul li a:hover{
 }
 /* cursor */
 .cursor{
-    width: 3rem;
+    /* width: 3rem;
     height: 3rem;
     border: 2px solid rgb(37, 37, 37);
     border-radius: 50%;
@@ -604,10 +592,11 @@ header ul li a:hover{
     filter: invert(1);
     transition-duration: 200ms;
     transition-timing-function: ease-out;
-    mix-blend-mode: difference;
+    mix-blend-mode: difference; */
+    display: none;
 }
 .cursorBall{
-    position: absolute;
+    /* position: absolute;
     width: 0.7rem;
     height: 0.7rem;
     border-radius: 50%;
@@ -615,40 +604,22 @@ header ul li a:hover{
     z-index: 999;
     transform: translate(50%, 50%);
     mix-blend-mode: difference;
-    filter: invert(1);
+    filter: invert(1); */
+    display: none;
 }
-.link-grow{
+/* .link-grow{
     transform: scale(2);
     background: rgb(37, 37, 37);
 }
 .effect{
-    transform: scale(3);
+    transform: scale(5);
     background: rgb(37, 37, 37);
-    width: 50px;
-    height: 50px;
-    border: 10px solid black;
-    border-radius: 50%;
-}
-.effect:after {
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    background-color: black;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    display: block;
-    content: "";
-    top: 50%;
-    left: 50%;
-    
-    transform: rotate(45deg);
-    transform-origin: -10px 40px;
 }
 .cubeEffect{
     transform: scale(3);
     background: rgb(37, 37, 37);
     border-radius: 5px;
-}
+} */
 .projects{
     position: relative;
     background: #e0e0e0;

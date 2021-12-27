@@ -8,6 +8,13 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
 </head>
 <body>
+    <!-- light version / full version -->
+    <div class="containerVersion">
+        <a id="linkLi" class="lightBtn" href="#" onclick="changeCSS('light.css', 0);">Lite  <i class="far fa-lightbulb"></i></a> 
+        <a id="linkLi" class="fullBtn" href="#" onclick="changeCSS('style.css', 0);">Full  <i class="fas fa-lightbulb"></i></a>
+    </div>
+
+
     <div class="cursor"></div>
     <button onclick="topFunction()" id="myBtn" title="Ir para o topo"><i class="fas fa-arrow-up"></i></button> 
     <div class="cursorBall"></div>
@@ -23,9 +30,9 @@
                     <li id="linkLi"><a href="#skills" onclick="fechar()">Habilidades</a></li>
                     <li id="linkLi"><a href="#projects" onclick="fechar()">Projetos</a></li>
                     <li id="linkLi" class="li-a"><a href="#contact" onclick="fechar()">Contato</a></li>
-                    <li id="linkLi" class="li-a"><a href="#" onclick="fechar()">Currículo</a></li>
+                    <li id="linkLi" class="li-a"><a href="curriculo/Currículo - Álef de souza Rosa.pdf" onclick="fechar()">Currículo</a></li>
                     <li id="linkLi" class="menu-negative"><a href="#contact" onclick="fechar()">Contato</a></li>
-                    <li id="linkLi" class="menu-negative2"><a href="#" onclick="fechar()">Currículo</a></li>
+                    <li id="linkLi" class="menu-negative2"><a href="curriculo/Currículo - Álef de souza Rosa.pdf" onclick="fechar()">Currículo</a></li>
                 </ul>
             </header>
             <div class="content-box">
@@ -39,7 +46,7 @@
         <div class="box box-images" id="linkLi">
             <h4 class="sol-right">阳</h4>
             <div class="gradient1"></div>
-            <img src="home.png" alt="background de códigos" class="background1">
+            <img src="images/home.png" alt="background de códigos" class="background1">
         </div>
     </section>
     <section class="about banner-right" id="about">
@@ -59,7 +66,7 @@
         </div>
         <div class="box box-images" id="imageEffect">
             <div class="container-images">
-                <img src="about2.jpg" alt="desenho sobre mim" class="about1" style="width:100%">
+                <img src="images/about2.jpg" alt="desenho sobre mim" class="about1" style="width:100%">
             </div>
         </div>
     </section>
@@ -69,7 +76,7 @@
             <div class="cards_wrap">
                 <div class="card_item">
                     <div class="card_inner">
-                        <img src="js.svg" alt="" class="img">
+                        <img src="images/js.svg" alt="" class="img">
                         <div class="role_name">JavaScript</div>
                         <div class="real_name">JS</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
@@ -78,7 +85,7 @@
 
                 <div class="card_item">
                     <div class="card_inner">
-                        <img src="vuejs.svg" alt="" class="img">
+                        <img src="images/vuejs.svg" alt="" class="img">
                         <div class="role_name">VueJS</div>
                         <div class="real_name">JavaScript Framework</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
@@ -87,7 +94,7 @@
 
                 <div class="card_item">
                     <div class="card_inner">
-                        <img src="laravel.svg" alt="" class="img">
+                        <img src="images/laravel.svg" alt="" class="img">
                         <div class="role_name">Laravel</div>
                         <div class="real_name">PHP Framework</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
@@ -96,7 +103,7 @@
 
                 <div class="card_item">
                     <div class="card_inner">
-                        <img src="c.svg" alt="" class="img">
+                        <img src="images/c.svg" alt="" class="img">
                         <div class="role_name">C#</div>
                         <div class="real_name">JavaScript Framework</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
@@ -105,7 +112,7 @@
 
                 <div class="card_item">
                     <div class="card_inner">
-                        <img src="tailwind.svg" alt="" class="img">
+                        <img src="images/tailwind.svg" alt="" class="img">
                         <div class="role_name">Tailwind</div>
                         <div class="real_name">CSS Framework</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
@@ -114,7 +121,7 @@
 
                 <div class="card_item">
                     <div class="card_inner">
-                        <img src="php.svg" alt="" class="img">
+                        <img src="images/php.svg" alt="" class="img">
                         <div class="role_name">PHP</div>
                         <div class="real_name">Hypertext Preprocessor</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
@@ -123,7 +130,7 @@
                 
                 <div class="card_item">
                     <div class="card_inner">
-                        <img src="css3.svg" alt="" class="img">
+                        <img src="images/css3.svg" alt="" class="img">
                         <div class="role_name">CSS3</div>
                         <div class="real_name">Cascading Style Sheets</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
@@ -133,7 +140,7 @@
                 
                 <div class="card_item">
                     <div class="card_inner">
-                        <img src="sql.svg" alt="" class="img">
+                        <img src="images/sql.svg" alt="" class="img">
                         <div class="role_name">SQL</div>
                         <div class="real_name">Structured Query Language</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
@@ -143,44 +150,89 @@
         </div>
     </section>
     <section class="projects" id="projects">
+        <!-- <iframe src="https://luanachansantos.vercel.app" height="200" width="300" title="Iframe Example"></iframe>  -->
         <div class="wrapper">
             <div class="header" id="linkLi">Projetos mais recentes</div>
             <div class="cards_wrap">
                 <div class="card_item" id="cubeEffect">
+                    <a style="text-decoration: none;" href="https://alefidev.vercel.app" target="_blank">
                     <div class="card_inner innerImg">
                         <div class="info">Clique para saber mais</div>
-                        <img src="img1.png" alt="" class="imgProject">
+                        <img src="images/img1.png" alt="" class="imgProject">
                         <div class="role_name">EzOffice - Programação</div>
                         <div class="real_name">BACKEND</div>
                         <div class="film">Projeto de Trabalho de conclusão de Curso, desenvolvido utilizando PHP, JAVASCRIPT, SQL, junto com frameworks Laravel v8, VueJS, Tailwind, Inertia.</div>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="card_item" id="cubeEffect">
+                    <a style="text-decoration: none;" href="https://luanachansantos.vercel.app" target="_blank">
                     <div class="card_inner innerImg">
                         <div class="info">Clique para saber mais</div>
-                        <img src="img1.png" alt="" class="imgProject">
-                        <div class="role_name">EzOffice - Design</div>
-                        <div class="real_name">FRONTEND</div>
+                        <img src="images/site1.png" alt="" class="imgProject">
+                        <div class="role_name">Portfólio Luana Chan</div>
+                        <div class="real_name">Artista</div>
                         <div class="film">Projeto de Trabalho de conclusão de Curso, desenvolvido utilizando PHP, JAVASCRIPT, SQL, junto com frameworks Laravel v8, VueJS, Tailwind, Inertia.</div>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="card_item" id="cubeEffect">
+                    <a style="text-decoration: none;" href="https://alefidev.vercel.app" target="_blank">
                     <div class="card_inner innerImg">
                         <div class="info">Clique para saber mais</div>
-                        <img src="laravel.svg" alt="" class="imgProject">
-                        <div class="role_name">Laravel</div>
-                        <div class="real_name">PHP Framework</div>
+                        <img src="images/site2.png" alt="" class="imgProject">
+                        <div class="role_name">Portfólio ALEFI.DEV</div>
+                        <div class="real_name">Programador</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="card_item" id="cubeEffect">
+                    <a style="text-decoration: none;" href="https://luanachan.vercel.app" target="_blank">
                     <div class="card_inner innerImg">
                         <div class="info">Clique para saber mais</div>
-                        <img src="laravel.svg" alt="" class="imgProject">
-                        <div class="role_name">Laravel</div>
-                        <div class="real_name">PHP Framework</div>
+                        <img src="images/site3.png" alt="" class="imgProject">
+                        <div class="role_name">Portfólio e Ecommerce</div>
+                        <div class="real_name">L.Chan</div>
                         <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
-                    </div>
+                    </div></a>
+                </div>  
+                <div class="card_item" id="cubeEffect">
+                    <a style="text-decoration: none;" href="https://alefiweb-dev.vercel.app" target="_blank">
+                    <div class="card_inner innerImg">
+                        <div class="info">Clique para saber mais</div>
+                        <img src="images/site4.png" alt="" class="imgProject">
+                        <div class="role_name">ALEFI.FULLSTACK</div>
+                        <div class="real_name">Programador Full Stack</div>
+                        <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
+                    </div></a>
+                </div>
+                <div class="card_item" id="cubeEffect">
+                    <a style="text-decoration: none;" href="https://luanachan2.vercel.app" target="_blank">
+                    <div class="card_inner innerImg">
+                        <div class="info">Clique para saber mais</div>
+                        <img src="images/site5.png" alt="" class="imgProject">
+                        <div class="role_name">L.Chan - ECommerce</div>
+                        <div class="real_name">Loja de Arte Virtual</div>
+                        <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
+                    </div></a>
+                </div>
+                <div class="card_item" id="cubeEffect">
+                    <a style="text-decoration: none;" href="https://alefidev-marketing.vercel.app" target="_blank">
+                    <div class="card_inner innerImg">
+                        <div class="info">Clique para saber mais</div>
+                        <img src="images/site6.png" alt="" class="imgProject">
+                        <div class="role_name">ALEFi!DEV - Marketing Digital</div>
+                        <div class="real_name">Agência de Marketing</div>
+                        <div class="film">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum neque.</div>
+                    </div></a>
+                </div>
+                <div class="card_item" id="cubeEffect">
+                    <a style="text-decoration: none;" href="https://alefidev.vercel.app" target="_blank">
+                    <div class="card_inner innerImg">
+                        <div class="info">Clique para saber mais</div>
+                        <img src="images/img1.png" alt="" class="imgProject">
+                        <div class="role_name">EzOffice - Programação</div>
+                        <div class="real_name">BACKEND</div>
+                        <div class="film">Projeto de Trabalho de conclusão de Curso, desenvolvido utilizando PHP, JAVASCRIPT, SQL, junto com frameworks Laravel v8, VueJS, Tailwind, Inertia.</div>
+                    </div></a>
                 </div>
             </div>
         </div>
@@ -212,8 +264,8 @@
                 <div class="socialmedia">
                     <a href=""><i class="fab fa-instagram-square"></i></a>
                     <a href=""><i class="fab fa-facebook-square"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-                    <a href=""><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/alef-souza-rosa"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Alef185"><i class="fab fa-github-square"></i></a>
                 </div>
                 
             </div>
@@ -287,6 +339,20 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         } 
+        
+        // light version / full version
+        function changeCSS(cssFile, cssLinkIndex) {
+
+        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+        }
+
     </script>
 </body>
 </html>
